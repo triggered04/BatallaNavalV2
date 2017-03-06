@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-
+import { Component, Input } from '@angular/core';
+import {AngularFire, FirebaseListObservable} from 'angularfire2';
 import { NavController } from 'ionic-angular';
 
 @Component({
@@ -7,10 +7,10 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'batallasTab.html'
 })
 export class BatallasTab {
+    @Input() batalla:FirebaseListObservable<any>;
 
-
-  constructor(public navCtrl: NavController) {
-    
+  constructor(public navCtrl: NavController, af: AngularFire) {
+  
   }
 
 }
