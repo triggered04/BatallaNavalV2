@@ -3,12 +3,12 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 @Component({
-  selector: 'batalla',
-  templateUrl: 'batalla.html'
+  selector: 'casilla',
+  templateUrl: 'casilla.html'
 })
-export class Batalla {
+export class Casilla {
 
-  batalla:any;
+  casilla:any;
   
   constructor(public navCtrl: NavController) {
     

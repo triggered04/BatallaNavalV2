@@ -1,0 +1,17 @@
+page-page1 {
+
+}
+.casilla{
+  cursor: pointer;
+  font-weight: bold;
+  height: 50px;
+  border: 1px solid #333;
+}
+.cSelected{
+ background: #000;
+ color: #ffffff;
+}
+.cUnselected{
+ color: #000000;
+ background: #fff;
+}
