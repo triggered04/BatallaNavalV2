@@ -2,12 +2,10 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar, Splashscreen } from 'ionic-native';
 
-import { Batalla } from '../pages/batalla/batalla';
 import { Creditos } from '../pages/creditos/creditos';
 import { Home } from '../pages/home/home';
-import { Login } from '../pages/login/login';
 import { Perfil } from '../pages/perfil/perfil';
-import { Registro } from '../pages/registro/registro';
+
 
 
 

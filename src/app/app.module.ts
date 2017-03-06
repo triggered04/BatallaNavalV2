@@ -10,6 +10,7 @@ import { Home } from '../pages/home/home';
 import { Login } from '../pages/login/login';
 import { Perfil } from '../pages/perfil/perfil';
 import { Registro } from '../pages/registro/registro';
+import {BatallasTab} from '../pages/perfil/batallasTab/batallasTab'
 
 // Import the AF2 Module
 import { AngularFireModule } from 'angularfire2';
@@ -32,6 +33,7 @@ export const firebaseConfig = {
     Login,
     Perfil,
     Casilla,
+    BatallasTab,
     Registro
   ],
   imports: [
@@ -47,6 +49,7 @@ export const firebaseConfig = {
     Login,
     Perfil,
     Casilla,
+    BatallasTab,
     Registro
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
