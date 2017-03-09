@@ -10,8 +10,8 @@
 
 <ion-content padding>
   <ion-tabs>
-      <ion-tab [root]="tab1Root"  tabTitle="Batallas Creadas"></ion-tab>
-      <ion-tab [root]="tab2Root" tabTitle="Batallas Aceptadas" ></ion-tab>
-      <ion-tab [root]="tab3Root" tabTitle="Batallas Finalizadas"></ion-tab>
+      <ion-tab [root]="tab1Root" [rootParams]="batalla1" tabTitle="Batallas Creadas"></ion-tab>
+      <ion-tab [root]="tab2Root" [rootParams]="batalla2" tabTitle="Batallas Aceptadas" ></ion-tab>
+      <ion-tab [root]="tab3Root" [rootParams]="batalla3" tabTitle="Batallas Finalizadas"></ion-tab>
   </ion-tabs>
 </ion-content>

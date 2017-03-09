@@ -1,16 +1,16 @@
 import { Component, Input } from '@angular/core';
 import {AngularFire, FirebaseListObservable} from 'angularfire2';
-import { NavController } from 'ionic-angular';
+import { NavController,NavParams } from 'ionic-angular';
 
 @Component({
   selector: 'batallasTab',
   templateUrl: 'batallasTab.html'
 })
 export class BatallasTab {
-    @Input() batalla:FirebaseListObservable<any>;
+   batalla:FirebaseListObservable<any>;
 
-  constructor(public navCtrl: NavController, af: AngularFire) {
-  
+  constructor(public navCtrl: NavController, af: AngularFire,navParams: NavParams) {
+    this.batalla = navParams.data;
   }
 
 }

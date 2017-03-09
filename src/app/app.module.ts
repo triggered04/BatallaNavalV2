@@ -12,6 +12,7 @@ import { Perfil } from '../pages/perfil/perfil';
 import { Registro } from '../pages/registro/registro';
 import {BatallasTab} from '../pages/perfil/batallasTab/batallasTab'
 
+
 // Import the AF2 Module
 import { AngularFireModule } from 'angularfire2';
  
