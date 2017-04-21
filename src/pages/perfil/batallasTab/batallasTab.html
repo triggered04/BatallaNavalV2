@@ -4,6 +4,9 @@
         Creada por: {{item.P1.split('-')[0]}}
       </ion-card-header>
       <ion-card-content>
+        Aceptada por: {{(item.P2.split('-')[0]=='')?'Nadie':item.P2.split('-')[0]}}
+      </ion-card-content>
+      <ion-card-content>
           Monto a apostar: {{item.monto}} 
       </ion-card-content>
     </ion-card>
