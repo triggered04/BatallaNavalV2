@@ -1,10 +1,10 @@
-<div class="casillas" >
-    <div id="batalla-button-bar1" >
-      <button id="batalla-button6" ion-button large class="casilla cUnselected">1</button>
-      <button id="batalla-button7" ion-button large class="casilla cUnselected">2</button>
+<div class="casillas"  *ngIf="muestro" >
+    <div id="batalla-button-bar1">
+      <button id="batalla-button6" ion-button large [ngClass]="{'cUnselected':casillas[0]==0,'cSelected'=casillas[0]==1},'casilla':true"  (click)="selectCasilla([1,0,0,0])" >1</button>
+      <button id="batalla-button7" ion-button large [ngClass]="{'cUnselected':casillas[1]==0,'cSelected'=casillas[1]==1},'casilla':true"  (click)="selectCasilla([1,0,0,0])">2</button>
     </div>
     <div id="batalla-button-bar2">
-      <button id="batalla-button9"  ion-button large class="casilla cUnselected" >3</button>
-      <button id="batalla-button10" ion-button large class="casilla cUnselected" >4</button>
+      <button id="batalla-button9"  ion-button large [ngClass]="{'cUnselected':casillas[2]==0,'cSelected'=casillas[2]==1},'casilla':true"  (click)="selectCasilla([1,0,0,0])">3</button>
+      <button id="batalla-button10" ion-button large [ngClass]="{'cUnselected':casillas[3]==0,'cSelected'=casillas[3]==1},'casilla':true"  (click)="selectCasilla([1,0,0,0])">4</button>
     </div>
 </div>

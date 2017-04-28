@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
+import { Component , Input} from '@angular/core';
 
-import { NavController } from 'ionic-angular';
+import { NavController,NavParams } from 'ionic-angular';
 
 @Component({
   selector: 'casilla',
@@ -8,10 +8,13 @@ import { NavController } from 'ionic-angular';
 })
 export class Casilla {
 
-  casilla:any;
-  
-  constructor(public navCtrl: NavController) {
+  @Input()  casillas:[0,0,0,0];
+  @Input()  muestro:boolean =true;
+  constructor(public navCtrl: NavController,navParams: NavParams) {
     
+      console.log(this.muestro);
   }
-
+    selectCasilla(valores){
+      this.casillas = valores;
+    }
 }
