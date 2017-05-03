@@ -8,6 +8,7 @@
 </ion-header>
 
 <ion-content padding>
+ 
    <ion-card *ngFor="let item of batallas | async" (click)="goToBatalla($event, item)">
       <ion-card-header>
        Creada por: {{item.P1.split('-')[0]}}
@@ -16,7 +17,9 @@
         Monto a apostar: {{item.monto}} 
      </ion-card-content>
    </ion-card>
+
    <ion-fab right bottom>
      <button ion-fab (click)="goToBatalla($event, null)"><ion-icon name="add"></ion-icon></button>
    </ion-fab>
+ 
 </ion-content>

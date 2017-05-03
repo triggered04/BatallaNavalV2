@@ -8,10 +8,10 @@ import { NavController,NavParams } from 'ionic-angular';
 })
 export class Casilla {
 
-  @Input()  casillas:[0,0,0,0];
+  @Input()  casillas:number[];
   @Input()  muestro:boolean =true;
   constructor(public navCtrl: NavController,navParams: NavParams) {
-    
+      this.casillas = [0,0,0,0];
       console.log(this.muestro);
   }
     selectCasilla(valores){

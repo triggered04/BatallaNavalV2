@@ -32,7 +32,6 @@ export class Home {
 
   goToBatalla(event, item) {
 
-    // That's right, we're pushing to ourselves!
     this.navCtrl.push(Batalla, {
       batalla: item
     });
