@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
+import { ETurno } from '../../app/models/ETurno';
+import { BatallaModel } from '../../app/models/BatallaModel'
 
 import {AngularFire, FirebaseListObservable} from 'angularfire2';
 import { Batalla } from '../batalla/batalla';
@@ -11,18 +13,6 @@ import { Batalla } from '../batalla/batalla';
 })
 export class Home {
 
-  items: Array<{
-                P1:string,
-                P2:string,
-                jugador1:number[],
-                jugador2:number[],
-                Seljugador1:number[],
-                Seljugador2:number[],
-                acertoJ1:boolean,
-                acertoJ2:boolean,
-                monto: number,
-                turno: string
-              }>;
   batallas:  FirebaseListObservable<any>;
   
   constructor(public navCtrl: NavController, af: AngularFire) {
@@ -31,9 +21,9 @@ export class Home {
   }
 
   goToBatalla(event, item) {
-
+   
     this.navCtrl.push(Batalla, {
-      batalla: item
+      batalla: (item!=null)?item : BatallaModel.newBatallaModer()
     });
   }
 

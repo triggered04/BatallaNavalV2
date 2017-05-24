@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import {AngularFire, FirebaseListObservable} from 'angularfire2';
 import { NavController,NavParams } from 'ionic-angular';
 

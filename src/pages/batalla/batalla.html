@@ -8,11 +8,11 @@
 </ion-header>
 
 <ion-content padding>
+    {{flagCasillasJ1}}
+    <casilla [muestro]="flagCasillasJ1 && batalla.P2 != ''" [casillas]="batalla.jugador1"></casilla>
+    <casilla [muestro]="flagCasillasJ1" [casillas]="batalla.Seljugador1"></casilla>
 
-    <casilla [muestro]="true"></casilla>
-    <casilla [muestro]="true"></casilla>
-
-    <casilla [muestro]="false"></casilla>
-    <casilla [muestro]="false"></casilla>
+    <casilla [muestro]="flagCasillasJ2 && batalla.P2 != ''" [casillas]="batalla.jugador2"></casilla>
+    <casilla [muestro]="flagCasillasJ2" [casillas]="batalla.Seljugador2"></casilla>
     
 </ion-content>
